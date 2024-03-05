@@ -1,7 +1,7 @@
 .hello {
-  font-size: 2rem;
-  background-image: var(--gradient-sunrise);
-  background-clip: text;
+  font-size: 15rem;
   color: transparent;
   width: 100px;
+  -webkit-text-stroke: 5px black;
+
 }

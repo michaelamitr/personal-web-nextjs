@@ -20,7 +20,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main>{children}</main>
+        <main>
+          <div className="color-mesh-container">
+            <section className="mesh-point"></section>
+            <section className="mesh-point mesh-point-reversed"></section>
+            <section className="mesh-point mesh-point-reversed"></section>
+            <section className="mesh-point"></section>
+          </div>
+          <div className="content-container">{children}</div>
+        </main>
         <Footer />
       </body>
     </html>

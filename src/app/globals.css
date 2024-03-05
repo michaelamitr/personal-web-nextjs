@@ -13,9 +13,90 @@
       var(--sunrise-orange),
       var(--sunrise-yellow),
       var(--sunrise-lemon));
+
+  --day-carribean: #3BCFD4;
+  --day-turquoise: #62C3AB;
+  --day-sage: #88B781;
+  --day-olive: #AFAB58;
+  --day-mustard: #D59F2E;
+  --day-orange: #FC9305;
+
+  --gradient-day: linear-gradient(45deg,
+      var(--day-carribean),
+      var(--day-turquoise),
+      var(--day-sage),
+      var(--day-olive),
+      var(--day-mustard),
+      var(--day-orange));
+
+  --sunset-purple: #5F0F40;
+  --sunset-red: #9A031E;
+  --sunset-yellow: #FB8B24;
+  --sunset-orange: #E36414;
+  --sunset-sea: #0F4C5C;
+  --sunset-blue: #092d36;
+
+  --gradient-sunset: linear-gradient(45deg,
+      var(--sunset-purple),
+      var(--sunset-red),
+      var(--sunset-yellow),
+      var(--sunset-orange),
+      var(--sunset-sea),
+      var(--sunset-blue));
+
+  --night-blue: #0E1331;
+  --night-plum: #160F31;
+  --night-purple: #1E0B31;
+  --night-violet: #260832;
+  --night-aubegine: #2E0432;
+  --night-grape: #360032;
+
+  --gradient-night: linear-gradient(45deg,
+      var(--night-blue),
+      var(--night-plum),
+      var(--night-purple),
+      var(--night-violet),
+      var(--night-aubegine),
+      var(--night-grape));
+
 }
 
 * {
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+body {
+  background-image: var(--gradient-day);
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+}
+
+.color-mesh-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mesh-point {
+  width: 50%;
+  height: 50vh;
+  border-radius: 50%;
+  background-image: var(--gradient-sunrise);
+  filter: blur(140px);
+}
+
+.mesh-point-reversed {
+  transform: rotate(180deg);
 }
