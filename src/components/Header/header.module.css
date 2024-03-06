@@ -14,11 +14,12 @@
   display: flex;
   flex-direction: column;
   background-color: var(--background-black);
+  padding-top: 20px;
 }
 
 .header_link_item {
   width: 100%;
-  height: calc((100vh - 170px)/6);
+  height: calc((100vh - 250px)/6);
   display: flex;
   align-items: center;
 }
@@ -27,14 +28,15 @@
   font-size: 2rem;
   border-bottom: 1px solid transparent;
   font-weight: bold;
-  background-image: var(--gradient-sunrise);
+  background-image: var(--gradient-day);
   background-clip: text;
   color: transparent;
+  font-family: var(--font-poppins)
 }
 
 li:has(.active) {
-  border-bottom: 1px solid white;
-  background-color: rgba(97, 97, 97, 0.228);
+  border-bottom: 0.5px solid white;
+  width: 60%;
 }
 
 .burgermenu_wrapper {

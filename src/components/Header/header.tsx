@@ -19,7 +19,9 @@ export default function Header() {
         <Image
           width={100}
           height={100}
-          src={openBurgerMenu ? '/close.svg' : '/burgermenuOpen.svg'}
+          src={
+            openBurgerMenu ? '/icons/close.svg' : '/icons/burgermenuOpen.svg'
+          }
           alt="Menu"
         />
       </div>

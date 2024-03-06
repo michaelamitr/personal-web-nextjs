@@ -1,7 +1,12 @@
-.hello {
-  font-size: 5rem;
-  color: transparent;
-  width: 100px;
-  -webkit-text-stroke: 5px black;
+.page_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10vw;
+}
 
+.michaela_image {
+  width: 75vw;
+  height: 75vw;
+  border-radius: 10px;
+  margin-top: 20px;
 }

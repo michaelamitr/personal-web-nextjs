@@ -1,10 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Raleway, Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header/header';
 import Footer from '@/components/Footer/footer';
+import cn from 'classnames';
 
-const inter = Inter({ subsets: ['latin'] });
+const raleway = Raleway({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-raleway',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
+  display: 'swap',
+  variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
   title: 'Michaela Trčková, personal website',
@@ -17,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={cn(raleway.variable, poppins.variable)}>
+      <body className={raleway.className}>
         <Header />
         <main>
           <div className="color-mesh-container">

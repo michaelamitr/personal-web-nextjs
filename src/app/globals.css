@@ -67,6 +67,10 @@
 
   --background-black: #000000e5;
 
+  /* text colors */
+
+  --text-black: black;
+
 }
 
 * {
@@ -76,6 +80,7 @@
 
 body {
   background-image: var(--gradient-day);
+  background-color: var(--background-black);
   height: 100vh;
 }
 
@@ -115,4 +120,28 @@ main {
 
 .mesh-point-reversed {
   transform: rotate(180deg);
+}
+
+h1 {
+  font-family: var(--font-poppins);
+  font-size: 3.5rem;
+  text-align: left;
+  color: transparent;
+  -webkit-text-stroke: 2.5px var(--text-black);
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@media(min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-family: var(--font-gravitas-one);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
