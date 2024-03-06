@@ -1,4 +1,6 @@
 :root {
+  /* lightmode gradients */
+
   --sunrise-purple: #845ec2;
   --sunrise-pink: #d65db1;
   --sunrise-salmon: #ff6f91;
@@ -28,6 +30,8 @@
       var(--day-olive),
       var(--day-mustard),
       var(--day-orange));
+
+  /* darkmode gradients */
 
   --sunset-purple: #5F0F40;
   --sunset-red: #9A031E;
@@ -59,6 +63,10 @@
       var(--night-aubegine),
       var(--night-grape));
 
+  /* background colors */
+
+  --background-black: #000000e5;
+
 }
 
 * {
@@ -69,6 +77,14 @@
 body {
   background-image: var(--gradient-day);
   height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 main {
