@@ -9,6 +9,18 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  margin-bottom: 40px;
+}
+
+.welcome_text {
+  font-size: 1.3rem;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.link_text {
+  color: var(--text-link);
+  font-style: italic;
 }
 
 .image_wrapper {

@@ -19,6 +19,26 @@ export default function Home() {
           />
           <Button href={'/portfolio'} text={'portfolio'} />
         </div>
+        <p className={styles.welcome_text}>
+          Hello and welcome to my page! My name is Michaela and I am now
+          profesionally focused on programming, more specifically Front-end
+          development. I am constantly working on my personal and tech
+          improvement and I am open to new challenges.
+        </p>
+        <p className={styles.welcome_text}>
+          If you would like ot get to know more about me, feel free to read my
+          story in the{' '}
+          <Link href={'/about'} className={styles.link_text}>
+            about
+          </Link>{' '}
+          section. I hope this page helps you to explore my skillset and
+          projects better. If you are interested in some kind of cooperation, do
+          not hesitate to{' '}
+          <Link href={'/contact'} className={styles.link_text}>
+            contact
+          </Link>{' '}
+          me.
+        </p>
         <div className={styles.image_wrapper}>
           <Image
             src="/img/IMG_0183.jpg"
