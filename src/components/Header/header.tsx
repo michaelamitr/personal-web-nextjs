@@ -32,7 +32,7 @@ export default function Header() {
               href="/"
               className={`${styles.header_link} ${
                 pathname === '/' ? styles.active : ''
-              }`}
+              } hover`}
             >
               Home
             </Link>
@@ -42,7 +42,7 @@ export default function Header() {
               href="/about"
               className={`${styles.header_link} ${
                 pathname === '/about' ? styles.active : ''
-              }`}
+              } hover`}
             >
               About
             </Link>
@@ -52,7 +52,7 @@ export default function Header() {
               href="/portfolio"
               className={`${styles.header_link} ${
                 pathname === '/portfolio' ? styles.active : ''
-              }`}
+              } hover`}
             >
               Portfolio
             </Link>
@@ -62,7 +62,7 @@ export default function Header() {
               href="/contact"
               className={`${styles.header_link} ${
                 pathname === '/contact' ? styles.active : ''
-              }`}
+              } hover`}
             >
               Contact
             </Link>
@@ -72,7 +72,7 @@ export default function Header() {
               href="/references"
               className={`${styles.header_link} ${
                 pathname === '/references' ? styles.active : ''
-              }`}
+              } hover`}
             >
               References
             </Link>
@@ -82,7 +82,7 @@ export default function Header() {
               href="/skills"
               className={`${styles.header_link} ${
                 pathname === '/skills' ? styles.active : ''
-              }`}
+              } hover`}
             >
               Skills
             </Link>

@@ -1,12 +1,27 @@
 .page_container {
   display: flex;
   flex-direction: column;
-  padding: 0 10vw;
+}
+
+.links_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.image_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  margin-left: -10vw;
+  background-color: transparent;
+  z-index: 0;
 }
 
 .michaela_image {
-  width: 75vw;
-  height: 75vw;
-  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
   margin-top: 20px;
 }

@@ -1,0 +1,11 @@
+.icon_wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.icon_img {
+  object-fit: cover;
+  object-position: center;
+}

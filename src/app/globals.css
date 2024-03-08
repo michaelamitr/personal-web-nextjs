@@ -79,9 +79,9 @@
 }
 
 body {
-  background-image: var(--gradient-day);
   background-color: var(--background-black);
-  height: 100vh;
+  min-height: 100vh;
+  height: 300vh;
 }
 
 li {
@@ -94,18 +94,25 @@ a {
 
 main {
   height: 100vh;
+  padding: 0 10vw;
 }
 
 .color-mesh-container {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-wrap: wrap;
+  background-position: center;
+  background-size: cover;
+  background-image: var(--gradient-day);
 }
 
 .content-container {
   position: relative;
+  top: 100px;
   width: 100%;
   height: 100%;
 }
@@ -124,7 +131,7 @@ main {
 
 h1 {
   font-family: var(--font-poppins);
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-align: left;
   color: transparent;
   -webkit-text-stroke: 2.5px var(--text-black);
@@ -140,8 +147,15 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-gravitas-one);
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 20px;
+  font-style: italic;
+}
+
+@media (min-width: 1000px) {
+  .hover:hover {
+    scale: 1.05;
+  }
+
 }
