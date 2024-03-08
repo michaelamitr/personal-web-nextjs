@@ -81,7 +81,6 @@
 body {
   background-color: var(--background-black);
   min-height: 100vh;
-  height: 300vh;
 }
 
 li {
@@ -93,8 +92,8 @@ a {
 }
 
 main {
-  height: 100vh;
   padding: 0 10vw;
+  min-height: 100%;
 }
 
 .color-mesh-container {
@@ -140,20 +139,29 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+
+.link_text {
+  color: var(--text-link);
+  font-style: italic;
+  letter-spacing: 1.4px;
+}
+
+
 @media(min-width: 768px) {
   h1 {
     font-size: 5rem;
   }
 }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 40px;
-  font-style: italic;
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hover:hover {
     scale: 1.05;
   }

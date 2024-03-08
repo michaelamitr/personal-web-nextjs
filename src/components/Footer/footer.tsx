@@ -1,3 +1,5 @@
+import styles from './footer.module.css';
+
 export default function Footer() {
-  return <footer>bye</footer>;
+  return <footer className={styles.footer}>bye</footer>;
 }

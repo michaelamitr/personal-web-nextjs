@@ -6,8 +6,8 @@
   margin: 0;
   border: 1px solid var(--text-black);
   border-radius: 18px;
+  letter-spacing: 1.4px;
 }
-
 
 .btn_link {
   margin: 0;
@@ -19,4 +19,11 @@
   color: var(--text-black);
   background-color: rgba(255, 255, 255, 0.11);
   border-radius: 18px;
+}
+
+@media (min-width: 1200px) {
+
+  .btn:hover {
+    scale: 1.05;
+  }
 }
