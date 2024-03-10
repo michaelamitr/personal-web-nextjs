@@ -48,6 +48,13 @@ export default function Home() {
             fill
             className={styles.michaela_image}
           />
+          <Image
+            src={'/img/lines-frame.png'}
+            alt="Image frame"
+            width={380}
+            height={380}
+            className={styles.image_frame}
+          />
         </div>
       </div>
     </>

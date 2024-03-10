@@ -17,10 +17,10 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.burgermenu_wrapper} onClick={handleMenuClick}>
         <Image
-          width={100}
-          height={100}
+          width={55}
+          height={55}
           src={
-            openBurgerMenu ? '/icons/close.svg' : '/icons/burgermenuOpen.svg'
+            openBurgerMenu ? '/icons/menu-close.png' : '/icons/burger-menu.png'
           }
           alt="Menu"
         />
