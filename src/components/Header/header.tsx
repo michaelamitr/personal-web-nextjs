@@ -4,11 +4,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { useState } from 'react';
+import getViewportWidth from '@/utils/viewport-width';
 
 export default function Header() {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
 
   const pathname = usePathname();
+
+  const isBigScreen = getViewportWidth() >= 1100;
 
   const handleMenuClick = () => {
     setOpenBurgerMenu(!openBurgerMenu);
@@ -18,14 +21,14 @@ export default function Header() {
       <div className={styles.burgermenu_wrapper} onClick={handleMenuClick}>
         <Image
           width={55}
-          height={55}
+          height={!openBurgerMenu ? 40 : 55}
           src={
             openBurgerMenu ? '/icons/menu-close.png' : '/icons/burger-menu.png'
           }
           alt="Menu"
         />
       </div>
-      {openBurgerMenu && (
+      {(openBurgerMenu || isBigScreen) && (
         <nav className={styles.nav} onClick={handleMenuClick}>
           <li className={styles.header_link_item}>
             <Link

@@ -66,11 +66,14 @@
   /* background colors */
 
   --background-black: #000000e5;
+  --background-transparent: transparent;
+  --background-milky: #ffffff1c;
 
   /* text colors */
 
   --text-black: black;
   --text-link: #9B1B90;
+  --text-transparent: transparent;
 }
 
 * {
@@ -132,7 +135,7 @@ h1 {
   font-family: var(--font-poppins);
   font-size: 3.2rem;
   text-align: left;
-  color: transparent;
+  color: var(--text-transparent);
   -webkit-text-stroke: 2.5px var(--text-black);
   margin: 0;
   margin-bottom: 20px;

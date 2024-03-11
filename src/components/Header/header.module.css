@@ -10,7 +10,7 @@
 
 .nav {
   position: absolute;
-  margin-top: 100px;
+  top: 100px;
   z-index: 1;
   height: calc(100vh - 100px);
   width: 100%;
@@ -34,7 +34,7 @@
   background-image: var(--gradient-day);
   background-clip: text;
   color: transparent;
-  font-family: var(--font-poppins)
+  font-family: var(--font-poppins);
 }
 
 li:has(.active) {
@@ -49,4 +49,64 @@ li:has(.active) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+@media (min-width: 1100px) {
+
+  .header {
+    padding: 0 5vw;
+  }
+
+  .burgermenu_wrapper {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    height: 80px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(12px);
+    padding: 0;
+    gap: 60px;
+  }
+
+  .header_link_item {
+    height: 50px;
+    width: unset;
+    margin: 0;
+  }
+
+  .header_link {
+    margin: 0;
+    background-color: var(--background-milky);
+    color: var(--text-black);
+    background-image: unset;
+    font-size: 1.2rem;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    border: 0;
+  }
+
+  li:has(.active) {
+    width: unset;
+    border: unset;
+  }
+
+  .active {
+    color: var(--text-transparent);
+    -webkit-text-stroke: 0.8px var(--text-black);
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+
+}
+
+@media (min-width: 1500px) {
+  .nav {
+    gap: 80px;
+  }
 }
