@@ -150,6 +150,11 @@ h2 {
   font-style: italic;
 }
 
+h1,
+h2 {
+  cursor: default;
+}
+
 
 .link_text {
   color: var(--text-link);

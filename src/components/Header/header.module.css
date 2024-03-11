@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  backdrop-filter: blur(12px);
 }
 
 .nav {
@@ -53,9 +54,9 @@ li:has(.active) {
 
 
 @media (min-width: 1100px) {
-
   .header {
     padding: 0 5vw;
+    backdrop-filter: unset;
   }
 
   .burgermenu_wrapper {
