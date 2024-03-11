@@ -103,6 +103,10 @@ li:has(.active) {
     font-size: 1.7rem;
   }
 
+  .active:hover {
+    scale: unset;
+  }
+
 }
 
 @media (min-width: 1500px) {
