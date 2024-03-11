@@ -167,3 +167,17 @@ h2 {
   }
 
 }
+
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+}
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 7.8rem;
+  }
+
+}

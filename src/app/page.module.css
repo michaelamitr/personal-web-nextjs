@@ -94,9 +94,9 @@
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width:1600px) {
   .page_container {
-    max-width: 1200px;
+    max-width: 1300px;
   }
 
   .image_wrapper {
