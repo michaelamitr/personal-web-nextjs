@@ -1,0 +1,16 @@
+.page_container {
+  min-height: 100vh;
+}
+
+.references_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (min-width:1600px) {
+  .page_container {
+    max-width: 1300px;
+  }
+}

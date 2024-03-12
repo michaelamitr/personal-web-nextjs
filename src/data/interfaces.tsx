@@ -1,10 +1,24 @@
 export interface Icon {
-  src: string;
-  alt: string;
-  href: string;
+  readonly src: string;
+  readonly alt: string;
+  readonly href: string;
 }
 
 export interface Button {
-  text: string;
-  href: string;
+  readonly text: string;
+  readonly href: string;
+}
+
+interface Links {
+  readonly href: string;
+  readonly src: string;
+  readonly alt: string;
+}
+
+export interface ReferenceItem {
+  readonly name: string;
+  readonly links: Links[];
+  readonly role: string;
+  readonly reference: string;
+  readonly year: number;
 }

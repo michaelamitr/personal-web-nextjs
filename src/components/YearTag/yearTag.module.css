@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  margin: 0;
+  border: 1px solid var(--text-black);
+  border-radius: 18px;
+  letter-spacing: 1.4px;
+  cursor: default;
+  background-color: var(--background-milky);
+  font-variant-numeric: lining-nums;
+}

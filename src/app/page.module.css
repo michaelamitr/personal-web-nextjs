@@ -22,14 +22,6 @@
   margin-bottom: 40px;
 }
 
-.welcome_text {
-  font-size: 1.3rem;
-  line-height: 28px;
-  margin: 0;
-  margin-bottom: 30px;
-  max-width: 566px;
-}
-
 .first_paragraph {
   grid-area: firstParagraph;
 }
@@ -72,6 +64,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .page_container {
     grid-template-columns: 50% 50%;
     grid-template-areas:

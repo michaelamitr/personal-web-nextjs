@@ -6,7 +6,6 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  backdrop-filter: blur(12px);
 }
 
 .nav {
@@ -44,19 +43,20 @@ li:has(.active) {
 }
 
 .burgermenu_wrapper {
-  height: 100px;
-  width: 100px;
-  margin: 0;
+  height: 80px;
+  width: 80px;
+  margin: 10px 10px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
 }
 
 
 @media (min-width: 1100px) {
   .header {
     padding: 0 5vw;
-    backdrop-filter: unset;
   }
 
   .burgermenu_wrapper {
