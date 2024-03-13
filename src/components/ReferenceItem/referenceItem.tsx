@@ -2,6 +2,7 @@ import styles from './referenceItem.module.css';
 import YearTag from '../YearTag/yearTag';
 import Icon from '../Icon/icon';
 import { ReferenceItem } from '@/data/interfaces';
+import Image from 'next/image';
 
 export default function ReferenceItem({
   name,
@@ -23,7 +24,23 @@ export default function ReferenceItem({
         ))}
         <YearTag year={year} />
       </div>
-      <p>{reference}</p>
+      <p>
+        <Image
+          src={'/icons/brackets-bottom.png'}
+          alt={'Brackets bottom'}
+          width={40}
+          height={30}
+          className={styles.brackets_bottom}
+        />
+        {reference}
+        <Image
+          src={'/icons/brackets-top.png'}
+          alt={'Brackets top'}
+          width={40}
+          height={30}
+          className={styles.brackets_top}
+        />
+      </p>
     </div>
   );
 }

@@ -10,6 +10,7 @@
 .reference_item_headline {
   font-size: 1.6rem;
   margin-bottom: 15px;
+  line-height: 35px;
 }
 
 .name {
@@ -24,10 +25,24 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
+.item_wrapper p {
+  position: relative;
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
 
+.brackets_bottom {
+  margin: 0 15px 10px 0;
+}
+
+.brackets_top {
+  position: absolute;
+  right: 0;
+  margin: 15px 0 0 10px;
+}
 
 @media (min-width:1400px) {
   .item_wrapper {
