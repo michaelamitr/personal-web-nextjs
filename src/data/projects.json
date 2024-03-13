@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "slug": "hike-it",
+    "year": 2023,
+    "name": "Hike It",
+    "shortDescription": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
+    "technologies": [
+      "React",
+      "JSON",
+      "HTML",
+      "CSS",
+      "Figma",
+      "Adobe LightRoom"
+    ],
+    "links": [
+      {
+        "href": "https://hike-it.netlify.app/",
+        "src": "/icons/web.png",
+        "alt": "Web icon"
+      },
+      {
+        "href": "https://github.com/michaelamitr/Hike_it",
+        "src": "/icons/github.png",
+        "alt": "GitHub icon"
+      }
+    ],
+    "longDescription": "",
+    "personalContribution": "",
+    "smallImage": "",
+    "galleryImages": [""]
+  }
+]
