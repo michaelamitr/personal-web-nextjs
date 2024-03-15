@@ -1,0 +1,21 @@
+.portfolio_item_container {
+  width: 100%;
+  max-width: 450px;
+  margin: 0;
+  border: 1px solid var(--text-black);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+}
+
+.project_image {
+  object-fit: cover;
+  object-position: center;
+}

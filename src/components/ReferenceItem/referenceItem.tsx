@@ -1,5 +1,5 @@
 import styles from './referenceItem.module.css';
-import YearTag from '../YearTag/yearTag';
+import Tag from '../Tag/tag';
 import Icon from '../Icon/icon';
 import { ReferenceItem } from '@/data/interfaces';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ export default function ReferenceItem({
             <Icon src={link.src} alt={link.alt} href={link.href} />
           ))}
         </div>
-        <YearTag year={year} />
+        <Tag text={year} />
       </div>
       <p>
         <Image

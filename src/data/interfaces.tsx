@@ -15,10 +15,22 @@ interface Links {
   readonly alt: string;
 }
 
+export interface TagProps {
+  readonly text: number | string;
+}
+
 export interface ReferenceItem {
   readonly name: string;
   readonly links: Links[];
   readonly role: string;
   readonly reference: string;
   readonly year: number;
+}
+export interface PortfolioItem {
+  readonly slug: string;
+  readonly imgUrl: string;
+  readonly name: string;
+  readonly year: number;
+  readonly shortDescription: string;
+  readonly Technologies: string[];
 }
