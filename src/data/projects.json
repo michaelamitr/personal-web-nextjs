@@ -27,7 +27,38 @@
     ],
     "longDescription": "",
     "personalContribution": "",
-    "smallImage": "",
+    "smallImage": "/img/hike-it.png",
+    "galleryImages": [""]
+  },
+  {
+    "id": 1,
+    "slug": "leviexpress",
+    "year": 2023,
+    "name": "Leviexpress",
+    "shortDescription": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
+    "technologies": [
+      "React",
+      "JSON",
+      "HTML",
+      "CSS",
+      "Figma",
+      "Adobe LightRoom"
+    ],
+    "links": [
+      {
+        "href": "https://hike-it.netlify.app/",
+        "src": "/icons/web.png",
+        "alt": "Web icon"
+      },
+      {
+        "href": "https://github.com/michaelamitr/Hike_it",
+        "src": "/icons/github.png",
+        "alt": "GitHub icon"
+      }
+    ],
+    "longDescription": "",
+    "personalContribution": "",
+    "smallImage": "/img/hike-it.png",
     "galleryImages": [""]
   }
 ]
