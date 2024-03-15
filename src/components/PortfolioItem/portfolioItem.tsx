@@ -1,6 +1,7 @@
+'use client';
 import styles from './portfolioItem.module.css';
-import cn from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
 import Tag from '../Tag/tag';
 import { PortfolioItem } from '@/data/interfaces';
 
@@ -13,7 +14,10 @@ export default function PortfolioItem({
   Technologies,
 }: PortfolioItem) {
   return (
-    <div className={styles.portfolio_item_container}>
+    <Link
+      className={styles.portfolio_item_container}
+      href={`/portfolio/${slug}`}
+    >
       <div className={styles.image_container}>
         <Image
           src={imgUrl}
@@ -34,6 +38,6 @@ export default function PortfolioItem({
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

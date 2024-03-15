@@ -1,3 +1,4 @@
+'use client';
 import styles from './portfolio.module.css';
 import PortfolioItem from '@/components/PortfolioItem/portfolioItem';
 import projectsData from '../../data/projects.json';
@@ -9,6 +10,7 @@ export default function Portfolio() {
       <div className={styles.portfolio_container}>
         {projectsData.map((project) => (
           <PortfolioItem
+            key={project.id}
             slug={project.slug}
             imgUrl={project.smallImage}
             name={project.name}

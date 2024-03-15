@@ -3,6 +3,7 @@
   max-width: 450px;
   margin: 0;
   border: 1px solid var(--text-black);
+  color: var(--text-black);
   border-radius: 18px;
 }
 
