@@ -16,7 +16,7 @@ interface Links {
 }
 
 export interface TagProps {
-  readonly text: number | string;
+  readonly text: number | string | undefined;
 }
 
 export interface ReferenceItem {
@@ -26,11 +26,25 @@ export interface ReferenceItem {
   readonly reference: string;
   readonly year: number;
 }
+
 export interface PortfolioItem {
   readonly slug: string;
   readonly imgUrl: string;
   readonly name: string;
   readonly year: number;
-  readonly shortDescription: string;
-  readonly Technologies: string[];
+  readonly description: string;
+  readonly technologies: string[];
+}
+
+export interface Project {
+  readonly id: number | undefined;
+  readonly slug: string | undefined;
+  readonly year: number | undefined;
+  readonly name: string | undefined;
+  readonly description: string | undefined;
+  readonly technologies: string[] | undefined;
+  readonly links: Links[] | undefined;
+  readonly personalContribution: string | undefined;
+  readonly smallImage: string | undefined;
+  readonly galleryImages: string[] | undefined;
 }

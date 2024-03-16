@@ -19,6 +19,7 @@
   color: var(--text-black);
   background-color: var(--background-milky);
   border-radius: 18px;
+  padding: 0 10px;
 }
 
 @media (min-width: 1200px) {

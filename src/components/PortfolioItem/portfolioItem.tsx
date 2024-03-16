@@ -10,8 +10,8 @@ export default function PortfolioItem({
   imgUrl,
   name,
   year,
-  shortDescription,
-  Technologies,
+  description,
+  technologies,
 }: PortfolioItem) {
   return (
     <Link
@@ -31,10 +31,10 @@ export default function PortfolioItem({
           <h2 className={styles.project_name}>{name}</h2>
           <Tag text={year} />
         </div>
-        <p>{shortDescription}</p>
+        <p>{description}</p>
         <div className={styles.technologies_container}>
-          {Technologies.map((technology) => (
-            <Tag text={technology} />
+          {technologies.map((technology) => (
+            <Tag key={technology} text={technology} />
           ))}
         </div>
       </div>

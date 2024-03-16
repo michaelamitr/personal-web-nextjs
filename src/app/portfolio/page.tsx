@@ -15,8 +15,8 @@ export default function Portfolio() {
             imgUrl={project.smallImage}
             name={project.name}
             year={project.year}
-            shortDescription={project.shortDescription}
-            Technologies={project.technologies}
+            description={project.description}
+            technologies={project.technologies}
           />
         ))}
       </div>

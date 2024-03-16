@@ -10,7 +10,6 @@
   border-radius: 18px;
   letter-spacing: 1.4px;
   cursor: default;
-  background-color: var(--background-milky);
   font-variant-numeric: lining-nums;
   padding: 0 10px;
 }

@@ -4,7 +4,7 @@
     "slug": "hike-it",
     "year": 2023,
     "name": "Hike It",
-    "shortDescription": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
+    "description": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
     "technologies": [
       "React",
       "JSON",
@@ -25,8 +25,7 @@
         "alt": "GitHub icon"
       }
     ],
-    "longDescription": "",
-    "personalContribution": "",
+    "personalContribution": "Programming with all mentioned technologies, Coming up with the project idea and theme, planning and time management, project architecture, design in Figma, team cooperation in GitHub, photography and processing in Adobe LightRoom, dark mode theme",
     "smallImage": "/img/hike-it.png",
     "galleryImages": [""]
   },
@@ -35,7 +34,7 @@
     "slug": "leviexpress",
     "year": 2023,
     "name": "Leviexpress",
-    "shortDescription": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
+    "description": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
     "technologies": [
       "React",
       "JSON",
@@ -56,7 +55,6 @@
         "alt": "GitHub icon"
       }
     ],
-    "longDescription": "",
     "personalContribution": "",
     "smallImage": "/img/hike-it.png",
     "galleryImages": [""]
