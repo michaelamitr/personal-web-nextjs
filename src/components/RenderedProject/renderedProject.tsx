@@ -24,11 +24,11 @@ export default function RenderedProject({
       </div>
       <div className={styles.text_container}>
         <div className={styles.paragraph_wrapper}>
-          <h2>Description</h2>
+          <h2 className={styles.section_headline}>Description</h2>
           <p>{projectToRender?.description}</p>
         </div>
         <div className={styles.paragraph_wrapper}>
-          <h2>Personal contribution</h2>
+          <h2 className={styles.section_headline}>Personal contribution</h2>
           <p>{projectToRender.personalContribution}</p>
         </div>
       </div>
@@ -41,6 +41,7 @@ export default function RenderedProject({
           className={styles.project_image}
         />
       </div>
+      <h2 className={styles.section_headline}>Technologies</h2>
       <div className={styles.technologies_wrapper}>
         {projectToRender.technologies.map((technology) => (
           <Tag key={technology} text={technology} />

@@ -17,8 +17,8 @@
   margin: 0;
 }
 
-.paragraph_wrapper h2 {
-  margin-bottom: 20px;
+.section_headline {
+  margin-bottom: 40px;
   font-weight: bold;
   width: fit-content;
 }
@@ -81,6 +81,6 @@
   }
 
   .image_wrapper {
-    height: 450px;
+    height: 80vh;
   }
 }

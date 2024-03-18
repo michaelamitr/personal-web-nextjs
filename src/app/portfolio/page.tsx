@@ -7,6 +7,10 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
+      <h2>
+        List of the projects which I was involved in. Click on the card to
+        discover more about my contribution & detailed description.
+      </h2>
       <div className={styles.portfolio_container}>
         {projectsData.map((project) => (
           <PortfolioItem

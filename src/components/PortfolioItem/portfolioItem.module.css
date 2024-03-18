@@ -57,6 +57,10 @@
   .portfolio_item_container {
     width: calc(100% / 2 - 40px);
   }
+
+  .project_name {
+    max-width: 350px;
+  }
 }
 
 

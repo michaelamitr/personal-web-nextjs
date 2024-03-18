@@ -3,6 +3,7 @@ import styles from './portfolioItem.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Tag from '../Tag/tag';
+import Button from '../Button/button';
 import { PortfolioItem } from '@/data/interfaces';
 
 export default function PortfolioItem({
