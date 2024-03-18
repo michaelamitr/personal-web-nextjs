@@ -1,6 +1,5 @@
 .portfolio_item_container {
   width: 100%;
-  max-width: 450px;
   margin: 0;
   border: 1px solid var(--text-black);
   color: var(--text-black);
@@ -39,6 +38,13 @@
   font-size: 2rem;
 }
 
+.portfolio_item_container p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .technologies_container {
   width: 100%;
   display: flex;
@@ -46,9 +52,26 @@
   gap: 8px;
 }
 
+
+@media (min-width: 1000px) {
+  .portfolio_item_container {
+    width: calc(100% / 2 - 40px);
+  }
+}
+
+
 @media (min-width: 1200px) {
+
   .portfolio_item_container:hover {
     scale: 1.01;
     cursor: pointer;
   }
+}
+
+@media (min-width: 1500px) {
+
+  .portfolio_item_container {
+    width: calc(100% / 3 - 40px);
+  }
+
 }

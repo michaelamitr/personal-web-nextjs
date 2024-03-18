@@ -37,14 +37,14 @@ export interface PortfolioItem {
 }
 
 export interface Project {
-  readonly id: number | undefined;
-  readonly slug: string | undefined;
-  readonly year: number | undefined;
-  readonly name: string | undefined;
-  readonly description: string | undefined;
-  readonly technologies: string[] | undefined;
-  readonly links: Links[] | undefined;
-  readonly personalContribution: string | undefined;
-  readonly smallImage: string | undefined;
-  readonly galleryImages: string[] | undefined;
+  readonly id: number;
+  readonly slug: string;
+  readonly year: number;
+  readonly name: string;
+  readonly description: string;
+  readonly technologies: string[];
+  readonly links?: Links[];
+  readonly personalContribution: string;
+  readonly smallImage: string;
+  readonly galleryImages: string[];
 }

@@ -1,10 +1,48 @@
 [
   {
     "id": 1,
+    "slug": "web-forddeveloper-company",
+    "year": 2023,
+    "name": "Web for developer company",
+    "description": "Website for advertising buildings and apartments. Feature of choosing the building via polygon, same logic with floors and apartments and showing the relevant info. Massive data table with filtering and sorting functions. Responsive for all devices. Not released yet, future business use for the development company.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Swagger",
+      "REST API",
+      "CSS",
+      "Framer Motion",
+      "JSON"
+    ],
+    "personalContribution": "Implementation of all above mentioned technologies. Developing a massive data table, responsivity, custom carousel gallery, data fetching. Project management in Jira, tickets creation and tasks delegation, design consulting, project structure logic and swagger structure, testing and bug fixing, error management, design remake, team cooperation in GitLab and code reviews.",
+    "smallImage": "/img/hike-it.png",
+    "galleryImages": [""]
+  },
+  {
+    "id": 2,
+    "slug": "custom-internal-system",
+    "year": 2023,
+    "name": "Custom internal system",
+    "description": "Internal admin system for all projects of the company. Management of invoices, contracts, suppliers, post and clients. Not released yet, future internal use for the development company.",
+    "technologies": [
+      "React",
+      "jQuery",
+      "TypeScript",
+      "DataTables",
+      "Bootstrap",
+      "REST API (Abra Flexibee)",
+      "JSON"
+    ],
+    "personalContribution": "Use of all above mentioned technologies, responsive styling, connection with Flexibee API and then developed custom management according to the clients requirements, Jira, team cooperation in GitLab and code reviews",
+    "galleryImages": [""]
+  },
+  {
+    "id": 3,
     "slug": "hike-it",
     "year": 2023,
     "name": "Hike It",
-    "description": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
+    "description": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails. Released and available.",
     "technologies": [
       "React",
       "JSON",
@@ -30,11 +68,11 @@
     "galleryImages": [""]
   },
   {
-    "id": 2,
+    "id": 4,
     "slug": "leviexpress",
     "year": 2023,
     "name": "Leviexpress",
-    "description": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails.",
+    "description": "Graduation project of the long-term course by Czechitas. Website about world long-distance trails. Unpublished, code available on GitHub.",
     "technologies": [
       "React",
       "JSON",

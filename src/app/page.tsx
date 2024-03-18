@@ -45,6 +45,8 @@ export default function Home() {
           src="/img/IMG_0183.jpg"
           alt="Photo of Michaela Trčková"
           fill
+          priority
+          sizes="(max-width: 500px) 80vw, (max-width: 1600px) 380px, 500px"
           className={styles.michaela_image}
         />
         <Image
@@ -52,6 +54,7 @@ export default function Home() {
           alt="Image frame"
           width={380}
           height={380}
+          priority
           className={styles.image_frame}
         />
       </div>
