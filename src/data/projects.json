@@ -64,7 +64,7 @@
         "alt": "GitHub icon"
       }
     ],
-    "personalContribution": "Programming with all mentioned technologies, Coming up with the project idea and theme, planning and time management, project architecture, design in Figma, team cooperation in GitHub, photography and processing in Adobe LightRoom, dark mode theme",
+    "personalContribution": "Programming with all mentioned technologies, Coming up with the project idea and theme, planning and time management, project architecture, design in Figma, team cooperation in GitHub, photography and processing photographs in Adobe LightRoom, dark mode theme",
     "smallImage": "/img/hike-it.png",
     "galleryImages": [""]
   },
@@ -166,6 +166,31 @@
     ],
     "personalContribution": "Own design, architecture and information processing, programming and deployment.",
     "smallImage": "/img/personal-web-v1.png",
+    "galleryImages": [""]
+  },
+  {
+    "id": 9,
+    "slug": "personal-website-v2",
+    "year": 2024,
+    "name": "Personal Website v2",
+    "description": "Second version of my personal website. Presentation of my skills, information about me, my portfolio and my references. Published and available.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "JSON",
+      "Adobe Illustrator"
+    ],
+    "links": [
+      {
+        "href": "https://github.com/michaelamitr/personal-web-nextjs",
+        "src": "/icons/github.png",
+        "alt": "GitHub icon"
+      }
+    ],
+    "personalContribution": "Own design, architecture and information processing, programming and deployment. Creating own illustrations and icons in Adobe Illustrator.",
+    "smallImage": "/img/personal-web-v2.png",
     "galleryImages": [""]
   }
 ]
