@@ -28,23 +28,18 @@ export interface ReferenceItem {
 }
 
 export interface PortfolioItem {
+  readonly id: number;
   readonly slug: string;
-  readonly imgUrl: string;
+  readonly smallImage: string;
+  readonly isIllustrationalImage?: boolean;
   readonly name: string;
   readonly year: number;
   readonly description: string;
   readonly technologies: string[];
 }
 
-export interface Project {
-  readonly id: number;
-  readonly slug: string;
-  readonly year: number;
-  readonly name: string;
-  readonly description: string;
-  readonly technologies: string[];
+export interface Project extends PortfolioItem {
   readonly links?: Links[];
   readonly personalContribution: string;
-  readonly smallImage: string;
   readonly galleryImages: string[];
 }

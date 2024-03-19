@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "slug": "web-forddeveloper-company",
+    "slug": "web-for-developer-company",
     "year": 2023,
     "name": "Web for developer company",
     "description": "Website for advertising buildings and apartments. Feature of choosing the building via polygon, same logic with floors and apartments and showing the relevant info. Massive data table with filtering and sorting functions. Responsive for all devices. Not released yet, future business use for the development company.",
@@ -16,7 +16,8 @@
       "JSON"
     ],
     "personalContribution": "Implementation of all above mentioned technologies. Developing a massive data table, responsivity, custom carousel gallery, data fetching. Project management in Jira, tickets creation and tasks delegation, design consulting, project structure logic and swagger structure, testing and bug fixing, error management, design remake, team cooperation in GitLab and code reviews.",
-    "smallImage": "/img/hike-it.png",
+    "smallImage": "/img/developer-web.jpg",
+    "isIllustrationalImage": true,
     "galleryImages": [""]
   },
   {
@@ -35,7 +36,8 @@
       "JSON"
     ],
     "personalContribution": "Use of all above mentioned technologies, responsive styling, connection with Flexibee API and then developed custom management according to the clients requirements, Jira, team cooperation in GitLab and code reviews",
-    "smallImage": "/img/hike-it.png",
+    "smallImage": "/img/developer-internal-system.jpg",
+    "isIllustrationalImage": true,
     "galleryImages": [""]
   },
   {

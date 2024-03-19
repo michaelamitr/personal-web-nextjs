@@ -3,12 +3,13 @@ import styles from './portfolioItem.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Tag from '../Tag/tag';
-import Button from '../Button/button';
+import IsIllustrationImage from '../IsIllustrationImage/isIllustrationImage';
 import { PortfolioItem } from '@/data/interfaces';
 
 export default function PortfolioItem({
   slug,
-  imgUrl,
+  smallImage,
+  isIllustrationalImage,
   name,
   year,
   description,
@@ -21,11 +22,14 @@ export default function PortfolioItem({
     >
       <div className={styles.image_container}>
         <Image
-          src={imgUrl}
+          src={smallImage}
           alt={`${name} project image`}
           fill
+          sizes="(max-width: 1000px) 80vw, (max-width: 1500px) 40vw, 33vw"
+          priority
           className={styles.project_image}
         />
+        {isIllustrationalImage && <IsIllustrationImage />}
       </div>
       <div className={styles.info_container}>
         <div className={styles.headline_container}>

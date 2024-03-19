@@ -72,6 +72,7 @@
   /* text colors */
 
   --text-black: black;
+  --text-white: white;
   --text-link: #9B1B90;
   --text-transparent: transparent;
 }

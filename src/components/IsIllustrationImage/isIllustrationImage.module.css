@@ -1,0 +1,16 @@
+.image_description {
+  position: absolute;
+  background-color: var(--background-black);
+  color: var(--text-white);
+  right: 0;
+  bottom: 0;
+  width: fit-content;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  letter-spacing: 1.4px;
+  font-size: 0.8rem;
+  border-radius: 18px 0 0 0;
+}

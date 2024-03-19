@@ -15,8 +15,10 @@ export default function Portfolio() {
         {projectsData.map((project) => (
           <PortfolioItem
             key={project.id}
+            id={project.id}
             slug={project.slug}
-            imgUrl={project.smallImage}
+            smallImage={project.smallImage}
+            isIllustrationalImage={project.isIllustrationalImage}
             name={project.name}
             year={project.year}
             description={project.description}

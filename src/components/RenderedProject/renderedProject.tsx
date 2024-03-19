@@ -2,6 +2,7 @@ import styles from './renderedProject.module.css';
 import { Project } from '@/data/interfaces';
 import Tag from '../Tag/tag';
 import Icon from '../Icon/icon';
+import IsIllustrationImage from '../IsIllustrationImage/isIllustrationImage';
 import Image from 'next/image';
 
 export default function RenderedProject({
@@ -40,6 +41,7 @@ export default function RenderedProject({
           priority
           className={styles.project_image}
         />
+        {projectToRender.isIllustrationalImage && <IsIllustrationImage />}
       </div>
       <h2 className={styles.section_headline}>Technologies</h2>
       <div className={styles.technologies_wrapper}>
