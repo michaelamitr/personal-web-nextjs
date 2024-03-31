@@ -80,16 +80,6 @@ export default function Header() {
               References
             </Link>
           </li>
-          <li className={styles.header_link_item}>
-            <Link
-              href="/skills"
-              className={`${styles.header_link} ${
-                pathname === '/skills' ? styles.active : ''
-              } hover`}
-            >
-              Skills
-            </Link>
-          </li>
         </nav>
       )}
     </header>
