@@ -18,7 +18,12 @@ export default function RenderedProject({
           <Tag text={projectToRender.year} />
           {projectToRender.links
             ? projectToRender.links.map((link) => (
-                <Icon src={link.src} alt={link.alt} href={link.href} />
+                <Icon
+                  key={link.href}
+                  src={link.src}
+                  alt={link.alt}
+                  href={link.href}
+                />
               ))
             : null}
         </div>

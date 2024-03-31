@@ -21,7 +21,12 @@ export default function ReferenceItem({
       <div className={styles.info_wrapper}>
         <div className={styles.links_wrapper}>
           {links.map((link) => (
-            <Icon src={link.src} alt={link.alt} href={link.href} />
+            <Icon
+              key={link.href}
+              src={link.src}
+              alt={link.alt}
+              href={link.href}
+            />
           ))}
         </div>
         <Tag text={year} />
