@@ -14,8 +14,8 @@ export default function Home() {
         <div className={styles.links_wrapper}>
           <Icon
             href={'https://www.linkedin.com/in/michaela-trckova-fe-dev/'}
-            alt={'LinkedIn'}
-            src={'/icons/linkedIn.svg'}
+            alt={'LinkedIn Icon'}
+            src={'/icons/linkedin.svg'}
           />
           <Button href={'/portfolio'} text={'portfolio'} />
         </div>
