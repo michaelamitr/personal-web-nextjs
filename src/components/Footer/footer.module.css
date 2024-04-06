@@ -4,6 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
   font-size: 3rem;
+  margin-top: 100px;
 }

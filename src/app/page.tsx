@@ -27,7 +27,7 @@ export default function Home() {
         and I am open to new challenges.
       </p>
       <p className={styles.second_paragraph}>
-        If you would like ot get to know more about me, feel free to read my
+        If you would like to get to know more about me, feel free to read my
         story in the{' '}
         <Link href={'/about'} className="link_text">
           about
