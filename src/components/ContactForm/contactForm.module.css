@@ -47,7 +47,17 @@
   font-size: 1.2rem;
   width: 100%;
   font-family: var(--font-raleway);
+}
 
+.controls_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls_container label {
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .submit_button {

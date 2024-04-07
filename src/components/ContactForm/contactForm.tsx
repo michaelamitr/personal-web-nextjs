@@ -1,36 +1,62 @@
+'use client';
+import { useState } from 'react';
 import styles from './contactForm.module.css';
+import { ContactFormValues } from '@/data/interfaces';
 
 export default function ContactForm() {
+  const initFormValues: ContactFormValues = {
+    fullName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  };
+  const initFormState = { values: initFormValues };
+
+  const [formState, setFormState] = useState(initFormState);
+
+  const { values } = formState;
+
+  const handleFormChange = (e: { target: { name: string; value: string } }) =>
+    setFormState((prevState) => ({
+      ...prevState,
+      values: {
+        ...prevState.values,
+        [e.target.name]: e.target.value,
+      },
+    }));
   return (
     <form className={styles.form}>
       <fieldset className={styles.fieldset}>
         <legend className={styles.legend}>Get in touch</legend>
         <div className={styles.form_line}>
           <label htmlFor="fullName" className={styles.label}>
-            Full name
+            Full name*
           </label>
           <input
             type="text"
-            name="size"
+            name="fullName"
             id="fullName"
-            // value=""
+            value={values.fullName}
             placeholder="Your full name"
             className={styles.input}
             required
+            onChange={handleFormChange}
           />
         </div>
         <div className={styles.form_line}>
           <label htmlFor="email" className={styles.label}>
-            E-mail
+            E-mail*
           </label>
           <input
             type="email"
-            name="size"
+            name="email"
             id="email"
-            // value=""
+            value={values.email}
             placeholder="Your e-mail"
             className={styles.input}
             required
+            onChange={handleFormChange}
           />
         </div>
         <div className={styles.form_line}>
@@ -39,41 +65,49 @@ export default function ContactForm() {
           </label>
           <input
             type="text"
-            name="size"
+            name="phone"
             id="phone"
-            // value=""
+            value={values.phone}
             placeholder="Your phone number"
             className={styles.input}
+            onChange={handleFormChange}
           />
         </div>
         <div className={styles.form_line}>
           <label htmlFor="subject" className={styles.label}>
-            Subject
+            Subject*
           </label>
           <input
             type="text"
-            name="size"
+            name="subject"
             id="subject"
-            // value=""
+            value={values.subject}
             placeholder="Subject of your message"
             className={styles.input}
+            onChange={handleFormChange}
           />
         </div>
         <div className={styles.form_line}>
           <label htmlFor="message" className={styles.label}>
-            Your message
+            Your message*
           </label>
           <textarea
             id="message"
+            name="message"
+            value={values.message}
             cols={20}
             rows={5}
             className={styles.textarea}
             placeholder="What would you like to tell me?"
-          ></textarea>
+            onChange={handleFormChange}
+          />
         </div>
-        <button type="submit" className={styles.submit_button}>
-          Send
-        </button>
+        <div className={styles.controls_container}>
+          <button type="submit" className={styles.submit_button}>
+            Send
+          </button>
+          <label>* required</label>
+        </div>
       </fieldset>
     </form>
   );

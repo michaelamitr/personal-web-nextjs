@@ -43,3 +43,11 @@ export interface Project extends PortfolioItem {
   readonly personalContribution: string;
   readonly galleryImages: string[];
 }
+
+export interface ContactFormValues {
+  readonly fullName: string;
+  readonly email: string;
+  readonly phone?: string;
+  readonly subject: string;
+  readonly message: string;
+}
