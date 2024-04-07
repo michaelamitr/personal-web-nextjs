@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './contactForm.module.css';
 import { ContactFormValues } from '@/data/interfaces';
+import { handleSendEmail } from '@/data/email';
 
 export default function ContactForm() {
   const initFormValues: ContactFormValues = {
@@ -25,8 +26,13 @@ export default function ContactForm() {
         [e.target.name]: e.target.value,
       },
     }));
+
   return (
-    <form className={styles.form}>
+    <form
+      className={styles.form}
+      onSubmit={() => handleSendEmail(formState)}
+      method="POST"
+    >
       <fieldset className={styles.fieldset}>
         <legend className={styles.legend}>Get in touch</legend>
         <div className={styles.form_line}>
