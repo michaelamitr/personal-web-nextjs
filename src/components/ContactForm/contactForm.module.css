@@ -12,14 +12,14 @@
 }
 
 .legend {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .form_line {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 6px;
+  margin-bottom: 12px;
 }
 
 .label {
@@ -38,6 +38,7 @@
   padding: 0 20px;
   font-size: 1.2rem;
   font-family: var(--font-raleway);
+  font-variant-numeric: lining-nums;
 }
 
 .textarea {
@@ -47,6 +48,7 @@
   font-size: 1.2rem;
   width: 100%;
   font-family: var(--font-raleway);
+  font-variant-numeric: lining-nums;
 }
 
 .controls_container {
