@@ -21,19 +21,20 @@ export async function sendEmail({ values }: { values: ContactFormValues }) {
 
   try {
     const sendResult = await transport.sendMail({
+      from: values.email,
       to: SMTP_EMAIL,
       subject: values.subject,
       html: `<html>
         <head>
           <title>Info mail</title>
           <style>
-              h2 {color: red;}
+              p {font-size: 20px;}
           </style>
         </head>
         <body>
           <h2>Name: ${values.fullName}</h2>
           <h3>E-mail: ${values.email}</h3><h3>Phone: ${values.phone}</h3>
-          <h3>Subject: ${values.subject}</h3><p>Message: ${values.message}</p>
+          <h3>Subject: ${values.subject}</h3><hr><p>Message: ${values.message}</p>
         </body>
       </html>`,
     });

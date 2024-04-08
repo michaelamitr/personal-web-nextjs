@@ -91,6 +91,7 @@ export default function ContactForm() {
             placeholder="Subject of your message"
             className={styles.input}
             onChange={handleFormChange}
+            required
           />
         </div>
         <div className={styles.form_line}>
