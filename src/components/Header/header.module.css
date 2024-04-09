@@ -10,14 +10,13 @@
 
 .nav {
   position: absolute;
-  top: 100px;
   z-index: 1;
-  height: calc(100vh - 100px);
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--background-black);
-  padding-top: 20px;
+  padding-top: 120px;
 }
 
 .header_link_item {
