@@ -154,7 +154,8 @@ h2 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   cursor: default;
 }
 
@@ -164,6 +165,7 @@ p {
   margin: 0;
   margin-bottom: 30px;
   max-width: 566px;
+  cursor: default;
 }
 
 
