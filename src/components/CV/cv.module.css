@@ -1,0 +1,25 @@
+.resume_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text-black);
+  border: 1px solid var(--text-black);
+  border-radius: 18px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+@media (min-width: 1200px) {
+  .resume_container:hover {
+    scale: 1.02;
+  }
+}

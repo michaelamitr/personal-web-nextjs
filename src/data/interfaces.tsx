@@ -1,4 +1,4 @@
-export interface Icon {
+export interface IconInterface {
   readonly src: string;
   readonly alt: string;
   readonly href: string;
@@ -19,7 +19,7 @@ export interface TagProps {
   readonly text: number | string | undefined;
 }
 
-export interface ReferenceItem {
+export interface ReferenceItemInterface {
   readonly name: string;
   readonly links: Links[];
   readonly role: string;

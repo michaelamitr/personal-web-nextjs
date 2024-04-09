@@ -1,7 +1,7 @@
 import styles from './referenceItem.module.css';
 import Tag from '../Tag/tag';
 import Icon from '../Icon/icon';
-import { ReferenceItem } from '@/data/interfaces';
+import { ReferenceItemInterface } from '@/data/interfaces';
 import Image from 'next/image';
 
 export default function ReferenceItem({
@@ -10,7 +10,7 @@ export default function ReferenceItem({
   role,
   reference,
   year,
-}: ReferenceItem) {
+}: ReferenceItemInterface) {
   return (
     <div className={styles.item_wrapper}>
       <h2 className={styles.reference_item_headline}>

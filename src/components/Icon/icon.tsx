@@ -2,9 +2,9 @@ import styles from './icon.module.css';
 import cn from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Icon } from '../../data/interfaces';
+import { IconInterface } from '@/data/interfaces';
 
-export default function Icon({ href, src, alt }: Icon) {
+export default function Icon({ href, src, alt }: IconInterface) {
   return (
     <Link
       href={href}

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-import cn from 'classnames';
 import Icon from '@/components/Icon/icon';
 import Link from 'next/link';
 import Button from '@/components/Button/button';
