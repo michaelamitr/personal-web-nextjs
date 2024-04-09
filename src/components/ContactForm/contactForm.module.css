@@ -3,7 +3,6 @@
   padding: 0 8vw;
   max-width: 650px;
   margin: 0;
-  margin-bottom: 50px;
 }
 
 .fieldset {
@@ -12,7 +11,8 @@
 }
 
 .legend {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  cursor: default;
 }
 
 .form_line {
@@ -78,9 +78,30 @@
   background-color: var(--day-sage);
 }
 
+@media (min-width: 1024px) {
+  .form {
+    padding: 0;
+    width: 50%;
+  }
+
+}
+
 @media (min-width: 1200px) {
 
   .submit_button:hover {
     scale: 1.05;
   }
+}
+
+
+@media (min-width: 1700px) {
+  .legend {
+    margin-bottom: 30px;
+  }
+
+  .form_line {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
 }
