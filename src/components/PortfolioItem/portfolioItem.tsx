@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Tag from '../Tag/tag';
 import IsIllustrationImage from '../IsIllustrationImage/isIllustrationImage';
-import { PortfolioItem } from '@/data/interfaces';
+import { PortfolioItemInterface } from '@/data/interfaces';
 
 export default function PortfolioItem({
   slug,
@@ -14,7 +14,7 @@ export default function PortfolioItem({
   year,
   description,
   technologies,
-}: PortfolioItem) {
+}: PortfolioItemInterface) {
   return (
     <Link
       className={styles.portfolio_item_container}

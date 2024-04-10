@@ -27,7 +27,7 @@ export interface ReferenceItemInterface {
   readonly year: number;
 }
 
-export interface PortfolioItem {
+export interface PortfolioItemInterface {
   readonly id: number;
   readonly slug: string;
   readonly smallImage: string;
@@ -38,7 +38,7 @@ export interface PortfolioItem {
   readonly technologies: string[];
 }
 
-export interface Project extends PortfolioItem {
+export interface Project extends PortfolioItemInterface {
   readonly links?: Links[];
   readonly personalContribution: string;
   readonly galleryImages: string[];
