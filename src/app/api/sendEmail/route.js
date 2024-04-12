@@ -21,13 +21,14 @@ export async function POST(req, res) {
       from: process.env.SENDER_EMAIL,
       to: process.env.SENDER_EMAIL,
       subject: subject,
-      text: `
-  Full name: ${fullName}
-  E-mail: ${email}
-  Phone: ${phone}
-  Subject: ${subject}
-  Message: ${message}
-  `,
+      html: `
+      <h2>Full name: ${fullName}</h2>
+    <h3>E-mail: ${email}</h3>
+    <h3>Phone: ${phone}</h3>
+    <hr>
+    <p style="font-size: 17px;">Message: ${subject}</p>
+    <p style="font-size: 17px;">Subject: ${message}</p>
+      `,
     };
 
     // Send the e-mail
