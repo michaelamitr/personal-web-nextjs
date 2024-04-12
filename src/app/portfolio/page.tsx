@@ -5,7 +5,7 @@ import projectsData from '../../data/projects.json';
 
 export default function Portfolio() {
   return (
-    <div>
+    <>
       <h1>Portfolio</h1>
       <h2>
         List of the projects which I was involved in. Click on the card to
@@ -26,6 +26,6 @@ export default function Portfolio() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }

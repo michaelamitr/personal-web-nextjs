@@ -51,3 +51,9 @@ export interface ContactFormValues {
   readonly subject: string;
   readonly message: string;
 }
+
+export interface TextLinkProps {
+  readonly href: string;
+  readonly text: string;
+  readonly isBlank: boolean;
+}

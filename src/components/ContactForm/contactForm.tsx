@@ -31,6 +31,7 @@ export default function ContactForm() {
   return (
     <>
       <form
+        id="contactForm"
         className={styles.form}
         onSubmit={(e) =>
           handleSendEmail(

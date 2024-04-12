@@ -1,0 +1,73 @@
+.page_container {
+  max-width: 1300px;
+}
+
+
+.main_container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "paragraph1"
+    "image1"
+    "paragraph2"
+    "image2"
+    "paragraph3"
+    "image3"
+    "paragraph4"
+    "image4";
+  margin-bottom: 40px;
+}
+
+.gridarea {
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fist_content {
+  grid-area: paragraph1;
+}
+
+.fist_image {
+  grid-area: image1;
+}
+
+.second_content {
+  grid-area: paragraph2;
+}
+
+.second_image {
+  grid-area: image2
+}
+
+.third_content {
+  grid-area: paragraph3;
+}
+
+.third_image {
+  grid-area: image3
+}
+
+.fourth_content {
+  grid-area: paragraph4;
+}
+
+.fourth_image {
+  grid-area: image4
+}
+
+
+@media (min-width: 1024px) {
+  .main_container {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "paragraph1 image1"
+      "image2 paragraph2"
+      "paragraph3 image3"
+      "image4 paragraph4"
+  }
+}

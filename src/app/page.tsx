@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Icon from '@/components/Icon/icon';
-import Link from 'next/link';
 import Button from '@/components/Button/button';
+import TextLink from '@/components/TextLink/textLink';
 
 export default function Home() {
   return (
@@ -27,17 +27,10 @@ export default function Home() {
       </p>
       <p className={styles.second_paragraph}>
         If you would like to get to know more about me, feel free to read my
-        story in the{' '}
-        <Link href={'/about'} className="link_text">
-          about
-        </Link>{' '}
-        section. I hope this page helps you to explore my skillset and projects
-        better. If you are interested in some kind of cooperation, do not
-        hesitate to{' '}
-        <Link href={'/contact'} className="link_text">
-          contact
-        </Link>{' '}
-        me.
+        story in the <TextLink href={'/about'} text="about" isBlank /> section.
+        I hope this page helps you to explore my skillset and projects better.
+        If you are interested in some kind of cooperation, do not hesitate to{' '}
+        <TextLink href={'#contactForm'} text="contact" isBlank={false} /> me.
       </p>
       <div className={styles.image_wrapper}>
         <Image
