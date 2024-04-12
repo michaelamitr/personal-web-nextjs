@@ -15,7 +15,7 @@
       "Framer Motion",
       "JSON"
     ],
-    "personalContribution": "Implementation of all above mentioned technologies. Developing a massive data table, responsivity, custom carousel gallery, data fetching. Project management in Jira, tickets creation and tasks delegation, design consulting, project structure logic and swagger structure, testing and bug fixing, error management, design remake, team cooperation in GitLab and code reviews.",
+    "personalContribution": "Implementation of all mentioned technologies. Developing a massive data table, responsivity, custom carousel gallery, data fetching. Project management in Jira, tickets creation and tasks delegation, design consulting, project structure logic and swagger structure, testing and bug fixing, error management, design remake, team cooperation in GitLab and code reviews.",
     "smallImage": "/img/developer-web.jpg",
     "isIllustrationalImage": true,
     "galleryImages": [""]
@@ -35,7 +35,7 @@
       "REST API (Abra Flexibee)",
       "JSON"
     ],
-    "personalContribution": "Use of all above mentioned technologies, responsive styling, connection with Flexibee API and then developed custom management according to the clients requirements, Jira, team cooperation in GitLab and code reviews",
+    "personalContribution": "Use of all mentioned technologies, responsive styling, connection with Flexibee API and then developed custom management according to the clients requirements, Jira, team cooperation in GitLab and code reviews",
     "smallImage": "/img/developer-internal-system.jpg",
     "isIllustrationalImage": true,
     "galleryImages": [""]
