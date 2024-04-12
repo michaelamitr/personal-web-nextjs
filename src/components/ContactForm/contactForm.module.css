@@ -84,6 +84,8 @@
   font-family: var(--font-poppins);
   font-weight: 500;
   padding: 15px;
+  margin-bottom: 20px;
+  max-width: 90vw;
 }
 
 .progress {
@@ -103,6 +105,10 @@
 
   .submit_button:hover {
     scale: 1.05;
+  }
+
+  .toast {
+    margin-bottom: 16.5px;
   }
 }
 
