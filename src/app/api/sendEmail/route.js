@@ -26,8 +26,8 @@ export async function POST(req, res) {
     <h3>E-mail: ${email}</h3>
     <h3>Phone: ${phone}</h3>
     <hr>
-    <p style="font-size: 17px;">Message: ${subject}</p>
-    <p style="font-size: 17px;">Subject: ${message}</p>
+    <p style="font-size: 17px;">Subject: ${subject}</p>
+    <p style="font-size: 17px;">Message: ${message}</p>
       `,
     };
 

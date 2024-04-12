@@ -6,8 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 export const handleSendEmail = async (
   e: FormEvent,
   emailData: ContactFormValues,
-  setEmailData: Dispatch<SetStateAction<{ values: ContactFormValues }>>,
-  values: ContactFormValues,
+  setEmailData: Dispatch<SetStateAction<ContactFormValues>>,
+  initFormValues: ContactFormValues,
 ) => {
   e.preventDefault();
   try {
@@ -22,9 +22,7 @@ export const handleSendEmail = async (
     const data = await response.json();
     if (data?.success) {
       toast(`${data?.message} ✅🍾`);
-      setEmailData({
-        values,
-      });
+      setEmailData(initFormValues);
     } else if (data?.success == false) {
       toast(`${data?.message} ❌😢`);
     }

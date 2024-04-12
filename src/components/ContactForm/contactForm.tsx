@@ -13,19 +13,14 @@ export default function ContactForm() {
     subject: '',
     message: '',
   };
-  const initFormState = { values: initFormValues };
+  const initFormState = initFormValues;
 
   const [formState, setFormState] = useState(initFormState);
-
-  const { values } = formState;
 
   const handleFormChange = (e: { target: { name: string; value: string } }) =>
     setFormState((prevState) => ({
       ...prevState,
-      values: {
-        ...prevState.values,
-        [e.target.name]: e.target.value,
-      },
+      [e.target.name]: e.target.value,
     }));
 
   return (
@@ -34,12 +29,7 @@ export default function ContactForm() {
         id="contactForm"
         className={styles.form}
         onSubmit={(e) =>
-          handleSendEmail(
-            e,
-            formState.values,
-            setFormState,
-            initFormState.values,
-          )
+          handleSendEmail(e, formState, setFormState, initFormValues)
         }
       >
         <fieldset className={styles.fieldset}>
@@ -52,7 +42,7 @@ export default function ContactForm() {
               type="text"
               name="fullName"
               id="fullName"
-              value={values.fullName}
+              value={formState.fullName}
               placeholder="Your full name"
               className={styles.input}
               required
@@ -67,7 +57,7 @@ export default function ContactForm() {
               type="email"
               name="email"
               id="email"
-              value={values.email}
+              value={formState.email}
               placeholder="Your e-mail"
               className={styles.input}
               required
@@ -82,7 +72,7 @@ export default function ContactForm() {
               type="text"
               name="phone"
               id="phone"
-              value={values.phone}
+              value={formState.phone}
               placeholder="Your phone number"
               className={styles.input}
               onChange={handleFormChange}
@@ -96,7 +86,7 @@ export default function ContactForm() {
               type="text"
               name="subject"
               id="subject"
-              value={values.subject}
+              value={formState.subject}
               placeholder="Subject of your message"
               className={styles.input}
               onChange={handleFormChange}
@@ -110,7 +100,7 @@ export default function ContactForm() {
             <textarea
               id="message"
               name="message"
-              value={values.message}
+              value={formState.message}
               cols={20}
               rows={5}
               className={styles.textarea}
