@@ -1,51 +1,34 @@
-'use server';
-import nodemailer from 'nodemailer';
+import { toast } from 'react-toastify';
 import { ContactFormValues } from './interfaces';
+import { Dispatch, FormEvent, SetStateAction } from 'react';
+import 'react-toastify/dist/ReactToastify.css';
 
-export async function sendEmail({ values }: { values: ContactFormValues }) {
-  const { SMTP_EMAIL, SMTP_PASSWORD } = process.env;
-  const transport = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: SMTP_EMAIL,
-      pass: SMTP_PASSWORD,
-    },
-  });
+export const handleSendEmail = async (
+  e: FormEvent,
+  emailData: ContactFormValues,
+  setEmailData: Dispatch<SetStateAction<{ values: ContactFormValues }>>,
+  values: ContactFormValues,
+) => {
+  e.preventDefault();
   try {
-    const testResult = await transport.verify();
-    console.log('testResult', testResult);
-  } catch (error) {
-    console.log(error);
-    return;
-  }
-
-  try {
-    const sendResult = await transport.sendMail({
-      from: values.email,
-      to: SMTP_EMAIL,
-      subject: values.subject,
-      html: `<html>
-        <head>
-          <title>Info mail</title>
-          <style>
-              p {font-size: 20px;}
-          </style>
-        </head>
-        <body>
-          <h2>Name: ${values.fullName}</h2>
-          <h3>E-mail: ${values.email}</h3><h3>Phone: ${values.phone}</h3>
-          <h3>Subject: ${values.subject}</h3><hr><p>Message: ${values.message}</p>
-        </body>
-      </html>`,
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(emailData),
     });
-    console.log(sendResult);
-  } catch (error) {
-    console.log(error);
-  }
-}
 
-export const handleSendEmail = async (values: {
-  values: ContactFormValues;
-}) => {
-  await sendEmail(values);
+    const data = await response.json();
+    if (data?.success) {
+      toast(`${data?.message} ✅🍾`);
+      setEmailData({
+        values,
+      });
+    } else if (data?.success == false) {
+      toast(`${data?.message} ❌😢`);
+    }
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
 };

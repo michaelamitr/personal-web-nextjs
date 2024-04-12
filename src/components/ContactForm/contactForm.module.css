@@ -78,6 +78,19 @@
   background-color: var(--day-sage);
 }
 
+.toast {
+  font-size: 1.5rem;
+  border-radius: 18px;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  padding: 15px;
+}
+
+.progress {
+  background-image: var(--gradient-day);
+  opacity: 1;
+}
+
 @media (min-width: 1024px) {
   .form {
     padding: 0;
