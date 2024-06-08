@@ -1,6 +1,5 @@
 .item_wrapper {
   width: 100%;
-  max-width: 450px;
   margin: 0;
   border: 1px solid var(--text-black);
   border-radius: 18px;
@@ -54,8 +53,14 @@
   margin: 15px 0 0 10px;
 }
 
-@media (min-width:1400px) {
+@media (min-width: 900px) {
   .item_wrapper {
-    max-width: 420px;
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width:1700px) {
+  .item_wrapper {
+    width: calc(100% / 3 - 20px);
   }
 }
