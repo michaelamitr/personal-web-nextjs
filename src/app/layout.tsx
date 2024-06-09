@@ -34,10 +34,10 @@ export default function RootLayout({
         <Header />
         <main>
           <div className="color-mesh-container">
-            <section className="mesh-point"></section>
-            <section className="mesh-point mesh-point-reversed"></section>
-            <section className="mesh-point mesh-point-reversed"></section>
-            <section className="mesh-point"></section>
+            <section className="mesh-point mesh-point-one"></section>
+            <section className="mesh-point mesh-point-two"></section>
+            <section className="mesh-point mesh-point-three"></section>
+            <section className="mesh-point mesh-point-four"></section>
           </div>
           <div className="content-container">{children}</div>
         </main>

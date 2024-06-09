@@ -65,7 +65,7 @@
 
   /* background colors */
 
-  --background-black: #000000e5;
+  --background-black: black;
   --background-transparent: transparent;
   --background-milky: #ffffff1c;
 
@@ -107,10 +107,13 @@ main {
   top: 0;
   left: 0;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   background-position: center;
   background-size: cover;
   background-image: var(--gradient-day);
+  gap: 50px;
 }
 
 .content-container {
@@ -121,15 +124,34 @@ main {
 }
 
 .mesh-point {
-  width: 50%;
-  height: 50vh;
+  width: calc(48% - 5%);
+  height: 40vh;
   border-radius: 50%;
   background-image: var(--gradient-sunrise);
-  filter: blur(140px);
+  margin: 0;
 }
 
-.mesh-point-reversed {
-  transform: rotate(180deg);
+.mesh-point-one {
+  transform: rotate(170deg);
+  filter: blur(65px);
+}
+
+.mesh-point-two {
+  transform: rotate(20deg);
+  filter: blur(85px);
+  margin-left: 10%;
+}
+
+.mesh-point-three {
+  transform: rotate(312deg);
+  filter: blur(85px);
+  margin-left: -20%;
+}
+
+.mesh-point-four {
+  transform: rotate(220deg);
+  filter: blur(65px);
+  margin-bottom: -20%;
 }
 
 h1 {
