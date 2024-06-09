@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { FormEvent, useState, useRef } from 'react';
 import styles from './contactForm.module.css';
 import { ContactFormValues } from '@/data/interfaces';
 import { handleSendEmail } from '@/data/email';
@@ -15,6 +15,8 @@ export default function ContactForm() {
   };
   const initFormState = initFormValues;
 
+  const submitButtonRef = useRef<HTMLButtonElement>(null);
+
   const [formState, setFormState] = useState(initFormState);
 
   const handleFormChange = (e: { target: { name: string; value: string } }) =>
@@ -23,14 +25,24 @@ export default function ContactForm() {
       [e.target.name]: e.target.value,
     }));
 
+  const handleFormSubmit = (e: FormEvent) => {
+    submitButtonRef.current!.disabled = true;
+    if (submitButtonRef.current!.disabled) {
+      submitButtonRef.current!.textContent = 'Sent!';
+    }
+    setTimeout(() => {
+      submitButtonRef.current!.disabled = false;
+      submitButtonRef.current!.textContent = 'Send';
+    }, 3000);
+    handleSendEmail(e, formState, setFormState, initFormValues);
+  };
+
   return (
     <>
       <form
         id="contactForm"
         className={styles.form}
-        onSubmit={(e) =>
-          handleSendEmail(e, formState, setFormState, initFormValues)
-        }
+        onSubmit={(e) => handleFormSubmit(e)}
       >
         <fieldset className={styles.fieldset}>
           <legend className={styles.legend}>Get in touch</legend>
@@ -110,7 +122,11 @@ export default function ContactForm() {
             />
           </div>
           <div className={styles.controls_container}>
-            <button type="submit" className={styles.submit_button}>
+            <button
+              type="submit"
+              className={styles.submit_button}
+              ref={submitButtonRef}
+            >
               Send
             </button>
             <label>* required</label>
